@@ -1,0 +1,11 @@
+.close {
+  position: relative;
+  right: 0;
+  top: -60px;
+  padding: 0px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 10px;
+}

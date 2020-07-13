@@ -1,0 +1,82 @@
+/* body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+} */
+.menu {
+  background: #1e1e1e;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  outline: none;
+}
+.menu span {
+  margin-left: 5px;
+}
+.avatar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2em 0.5em;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.avatar img {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+.avatar h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+  color: antiquewhite;
+}
+.menu ul {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+  transition: all 3s;
+}
+.menu ul li {
+  padding: 0.5em 1em 0.5em 0.7em;
+  font-size: 1.1em;
+  font-weight: regular;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: auto 20px;
+  transition: all 0.15s linear;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+.profileSideBar {
+  width: 240px;
+  color: white;
+  padding-left: 10%;
+  background: #1e1e1e;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  border-left: 5px solid transparent;
+}
+.profileSideBar .Link {
+  color: white;
+  margin-left: 5px;
+}
+.activeSideBar {
+  color: #b93632;
+  border-left: 5px solid #b93632;
+  background: #1b1b1b;
+  transition: ease-in;
+}
+.activeSideBar .activeLink {
+  color: #b93632;
+}
+
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.image-upload img {
+  cursor: pointer;
+}

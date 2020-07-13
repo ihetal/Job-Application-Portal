@@ -1,0 +1,27 @@
+.companies li {
+  list-style: none;
+}
+
+.companies em {
+  font-weight: bold;
+  text-align: justify;
+  right: 25px;
+  position: absolute;
+}
+.companies p {
+  text-align: justify;
+  border-bottom: 1px solid grey;
+  font-size: 16px;
+}
+
+.close {
+  position: relative;
+  right: -40px;
+  top: -50px;
+  padding: 0px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 10px;
+}

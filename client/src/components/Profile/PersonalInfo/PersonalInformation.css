@@ -1,0 +1,111 @@
+.personalinfo {
+  display: flex;
+  margin-left: 240px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1250px) {
+  .personalinfo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.personalinfo h1 {
+  padding-top: 25px;
+  color: white;
+  font-size: 30px;
+}
+.personalinfo .header {
+  background: black;
+  position: relative;
+  width: 50%;
+  height: 15%;
+  margin-top: 35px;
+  margin-left: 70px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.personalinfo .pi-header {
+  background: black;
+  width: 650px;
+  height: 100px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 35px 110px;
+  margin-bottom: 0px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+}
+
+.pi-form {
+  background: #fff;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  position: relative;
+  width: 750px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: -45px 60px;
+  margin-bottom: 0px;
+  padding-top: 75px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.personalinfo input {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.summary-form {
+  background: #fff;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  position: relative;
+  width: 350px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-top: -60px;
+  margin-bottom: 0px;
+  padding-top: 75px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.personalinfo textarea {
+  margin: auto, 10px;
+  margin-bottom: 10px;
+}

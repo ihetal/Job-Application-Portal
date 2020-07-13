@@ -1,0 +1,360 @@
+/***----- BANNER -----***/
+
+.forum-banner {
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 140px;
+}
+.forum-banner h1 {
+  padding-top: 50px;
+  text-align: left;
+}
+.forum-banner .headernav {
+  height: 70px;
+  border-bottom: 1px solid #c9cccd;
+  background-color: white;
+}
+
+.forum-banner .searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header__offset-btn {
+  width: 50px;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+/*****----Forum Posts--------*****/
+.posts__content > * {
+  margin: 0;
+  display: inline-block;
+  font-family: "Nunito Sans", sans-serif;
+}
+.posts__content h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #394047;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.posts__content img {
+  margin-right: 0px;
+  vertical-align: -2px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+.posts__content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #8e9091;
+}
+
+/***---- CREATE TOPIC ------***/
+
+.createtopic {
+  background-color: #ffffff;
+  border: solid 1px #f3f4f5;
+  width: 85%;
+  margin: auto auto;
+}
+.createtopic input {
+  border: solid 1px #e9ecee;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  color: #8e9091;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.createtopic .custom-select {
+  display: block;
+}
+.createtopic .custom-select::after {
+  right: 20px;
+}
+.createtopic select {
+  display: block;
+  width: 100%;
+  border: solid 1px #e9ecee;
+  background-color: #f8f9fa;
+  color: #8e9091;
+}
+.createtopic textarea {
+  font-size: 16px;
+  border: solid 1px #e9ecee;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  color: #8e9091;
+  resize: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.create__head {
+  margin-bottom: 20px;
+  border-bottom: solid 1px #e9ecee;
+  align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.create__head > span {
+  margin-left: auto;
+  padding-right: 20px;
+  color: #8e9091;
+}
+.create__title {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+.create__title img {
+  width: 28px;
+  margin-right: 15px;
+}
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.create__footer {
+  flex-wrap: wrap;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 30px;
+  border-top: solid 1px #e9ecee;
+}
+
+.create__btn-cancel {
+  margin-right: 15px;
+}
+.btn {
+  height: 38px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 0;
+  background-color: #e9ecee;
+  justify-content: center;
+  align-items: center;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+.btn,
+.btn:visited,
+.btn:active,
+.btn:link {
+  color: #394047;
+}
+.btn i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #5c6166;
+}
+.btn span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.btn--type-02 {
+  background-color: #f9bc64;
+}
+.btn--type-02,
+.btn--type-02:visited,
+.btn--type-02:active,
+.btn--type-02:link {
+  color: #ffffff;
+}
+.btn--type-02 i {
+  margin-right: 15px;
+  color: #ffffff;
+}
+.btn-select {
+  position: relative;
+  height: 38px;
+  font-size: 16px;
+  background-color: #e9ecee;
+  align-items: center;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/*****----- View Topic -------*******/
+.topics {
+  margin-top: 25px;
+  border-bottom: solid #c6cbcf;
+}
+@media only screen and (min-width: 1040px) {
+  .topics__heading {
+    text-align: left !important;
+  }
+}
+@media only screen and (max-width: 1039px) {
+  .topics__heading {
+    text-align: left !important;
+  }
+}
+.topics__heading-title {
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.tags {
+  margin-bottom: 6px;
+  margin-left: 0;
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  background-color: #4f80b0;
+  text-align: left;
+  padding: 0 8px;
+  border-radius: 3px;
+}
+.topic__description {
+  background: white;
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 75%;
+}
+.topic__description .description {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.usericon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.generalicon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+.topic__caption {
+  width: 100%;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .topic__caption {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topic__date {
+    padding-right: 0;
+  }
+}
+.topic__user {
+  font-weight: 600;
+  font-size: 20px;
+}
+.topic__date {
+  text-align: right;
+  padding-right: 20px;
+  flex: 2;
+  font-weight: 600;
+  color: #8e9091;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .topic__date {
+    margin-left: 10px;
+  }
+}
+.topic__text {
+  text-align: justify;
+  margin: 10px 75px;
+  border-bottom: 0.1em solid #c6cbcf;
+}
+.topic__text p {
+  margin: 0;
+  color: #8e9091;
+  line-height: 1.5;
+}
+
+.topic__footer {
+  padding-left: 10px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 75px;
+}
+.topic__footer p {
+  margin-bottom: 10px;
+}
+.topic__footer i {
+  cursor: pointer;
+}
+.upvotes {
+  text-align: left;
+  align-items: center;
+  font-size: 25px;
+}
+.downvotes {
+  text-align: left;
+  align-items: center;
+  font-size: 25px;
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+.replyicon {
+  cursor: pointer;
+  text-align: right;
+  flex: 2;
+  align-items: center;
+  font-size: 25px;
+  padding-right: 75px;
+}
+.hidereplypost {
+  display: none;
+}
+.replypost_form {
+  margin: 10px 75px;
+}
+
+.topic__comments {
+  text-align: justify;
+  margin: 10px 75px;
+  padding-bottom: 5px;
+}
