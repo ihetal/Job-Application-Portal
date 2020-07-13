@@ -1,5 +1,5 @@
-# Job-Application-Portal
-A job application and management portal.
+# Job Application and Management Portal
+A job application and management portal which uses machine learning model to recommend jobs to users.
 
 #### Technology Stack:
 - HTML
