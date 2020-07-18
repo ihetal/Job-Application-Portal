@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logout } from "../actions/authActions";
-
+import "./Header.css";
 export class Header extends Component {
   constructor(props) {
     super(props);
@@ -21,6 +21,9 @@ export class Header extends Component {
           ref={this.navBar}
           class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top"
         >
+          <button type="button" class="mobile-nav-toggle d-xl-none">
+            <i class="fa fa-bars"></i>
+          </button>
           <Link to="/" class="navbar-brand">
             DIVYANG
           </Link>
@@ -99,15 +102,15 @@ export class Header extends Component {
                 <React.Fragment>
                   <li class="nav-item">
                     <Link
-                      class="nav-link"
+                      className="nav-link"
                       to={{ pathname: "/login", state: { login: true } }}
                     >
-                      <i class="nav-link fas fa-user"></i>Sign In
+                      <i className="nav-link fas fa-user"></i>Sign In
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link
-                      class="nav-link"
+                      className="nav-link"
                       to={{ pathname: "/signup", state: { login: false } }}
                     >
                       <i class=" nav-link fa fa-user-plus"></i>Register
@@ -118,6 +121,69 @@ export class Header extends Component {
             </ul>
           </div>
         </nav>
+        <div id="myheader">
+          <nav class="nav-menu">
+            <ul>
+              <li>
+                <Link to="/">
+                  <i className="fa fa-home" aria-hidden="true"></i> Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/jobs">
+                  <i className="fa fa-folder-open" aria-hidden="true"></i> Job
+                  Portal
+                </Link>
+              </li>
+              <li>
+                {this.props.isemployer ? (
+                  <Link to="/dashboard">
+                    <i className="fas fa-copy"></i> Applications
+                  </Link>
+                ) : (
+                  <Link to="/forum">
+                    <i className="fa fa-comment" aria-hidden="true"></i> Discuss
+                  </Link>
+                )}
+              </li>
+              {this.props.isAuthenticated ? (
+                <React.Fragment>
+                  <li>
+                    <Link to={linkvalue}>
+                      <i className="fas fa-users"></i>
+                      Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      onClick={() => {
+                        this.props.logout();
+                      }}
+                    >
+                      <i className="fas fa-sign-out-alt"></i>
+                      Logout
+                    </Link>
+                  </li>
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <li>
+                    <Link to={{ pathname: "/login", state: { login: true } }}>
+                      <i className="fas fa-user"></i>
+                      {"  "} Sign In
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={{ pathname: "/signup", state: { login: false } }}>
+                      <i className="fa fa-user-plus"></i>Register
+                    </Link>
+                  </li>
+                </React.Fragment>
+              )}
+            </ul>
+          </nav>
+        </div>
       </div>
     );
   }

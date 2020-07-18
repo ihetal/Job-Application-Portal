@@ -1,0 +1,113 @@
+#myheader {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: #040b14;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  transition: all ease-in-out 0.5s;
+  z-index: 9999;
+}
+
+.profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+}
+.profile h2 {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+#myheader .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#myheader .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu {
+  padding-top: 70px;
+}
+.nav-menu * {
+  list-style: none;
+}
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.nav-menu a {
+  align-items: center;
+  color: #a8a9b4;
+  transition: 0.3s;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-menu a i {
+  font-size: 22px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active > a i,
+.nav-menu li:hover > a i {
+  color: #149ddd;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+
+  z-index: 9998;
+  border: 0;
+  background: none;
+  display: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+.mobile-nav-toggle i {
+  color: white;
+}
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #myheader {
+  left: 0px;
+}
+
+@media (max-width: 990px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}

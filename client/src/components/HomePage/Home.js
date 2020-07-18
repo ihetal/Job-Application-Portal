@@ -17,25 +17,6 @@ export class Home extends Component {
                   Header
                 ============================--> */}
         <header id="header" className="header-inner-pages">
-          <div id="topbar">
-            <div className="container">
-              <div className="social-links">
-                <Link to="/">
-                  <i className="fab fa-twitter"></i>
-                </Link>
-                <Link to="/">
-                  <i className="fas fa-facebook"></i>
-                </Link>
-                <Link to="/">
-                  <i className="fas fa-linkedin"></i>
-                </Link>
-                <Link to="/">
-                  <i className="fas fa-instagram"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-
           <div className="container">
             <div className="logo float-left">
               <h1 className="text-light">
@@ -44,7 +25,77 @@ export class Home extends Component {
                 </Link>
               </h1>
             </div>
-
+            <button type="button" class="mobile-nav-toggle d-xl-none">
+              <i style={{ color: "#149ddd" }} class="fa fa-bars"></i>
+            </button>
+            <div id="myheader">
+              <nav class="nav-menu">
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <i className="fa fa-home" aria-hidden="true"></i> Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/jobs">
+                      <i className="fa fa-folder-open" aria-hidden="true"></i>{" "}
+                      Job Portal
+                    </Link>
+                  </li>
+                  <li>
+                    {this.props.isemployer ? (
+                      <Link to="/dashboard">
+                        <i className="fas fa-copy"></i> Applications
+                      </Link>
+                    ) : (
+                      <Link to="/forum">
+                        <i className="fa fa-comment" aria-hidden="true"></i>{" "}
+                        Discuss
+                      </Link>
+                    )}
+                  </li>
+                  <li>
+                    <a href="#footer">
+                      <i class="fa fa-envelope" aria-hidden="true"></i> Contact
+                      Us
+                    </a>
+                  </li>
+                  {this.props.isAuthenticated ? (
+                    <React.Fragment>
+                      <li>
+                        <Link
+                          to="/"
+                          onClick={() => {
+                            this.props.logout();
+                          }}
+                        >
+                          <i className="fas fa-sign-out-alt"></i>
+                          Logout
+                        </Link>
+                      </li>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <li>
+                        <Link
+                          to={{ pathname: "/login", state: { login: true } }}
+                        >
+                          <i className="fas fa-user"></i>
+                          {"  "}Sign In
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to={{ pathname: "/signup", state: { login: false } }}
+                        >
+                          <i className="fa fa-user-plus"></i>Register
+                        </Link>
+                      </li>
+                    </React.Fragment>
+                  )}
+                </ul>
+              </nav>
+            </div>
             <nav className="main-nav float-right d-none d-lg-block">
               <ul>
                 <li>
