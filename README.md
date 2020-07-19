@@ -1,6 +1,6 @@
 # Job Application and Management Portal
 A job application and management portal which uses machine learning model to recommend jobs to users.<br/>
-You can view the project here : http://54.183.141.97/
+You can view the project here : http://18.144.84.225/
 
 #### Job Recommendations:
  Designed an item based and user based collaborative filtering which recommends jobs to users based on jobs they have applied to and based on similiar
