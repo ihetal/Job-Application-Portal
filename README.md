@@ -2,6 +2,12 @@
 A job application and management portal which uses machine learning model to recommend jobs to users.<br/>
 You can view the project here : http://54.183.141.97/
 
+#### Job Recommendations:
+ Designed an item based and user based collaborative filtering which recommends jobs to users based on jobs they have applied to and based on similiar
+user profiles. 
+- The **item based collaborative filtering**, uses locality sensitive hashing with cosine similiarity to find out the most similiar jobs. 
+- The **user based collaborative filtering**, uses nearest neighbor algorithm to find out the users most similar to the current user.
+
 #### Technology Stack:
 - HTML
 - React.js
@@ -9,7 +15,7 @@ You can view the project here : http://54.183.141.97/
 - Express.js
 - Redux
 - CSS
-- Python Flask (for machine learning model)
+- Python Flask (for deploying the machine learning model)
 - AWS (EC2, RDS, S3) - for cloud deployment
 
 ## Architecture:
